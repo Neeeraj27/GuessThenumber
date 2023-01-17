@@ -1,0 +1,26 @@
+//Number guessing game with kotlin
+fun main(){
+    val number=(1..10).random()
+    val user=0
+    var trial=8
+    println("Welcome to number guessing game here you have to choose a number between 1 to 100 in 8 trials let' go")
+    while(user <trial){
+        print("Enter number- ")
+        var user=Integer.valueOf(readLine())
+        if(user==number){
+            println("matched")
+            break
+        }
+        else if(number<user){
+            println("number lesser than $user")
+            trial--
+            println("You have left only $trial chance")
+        }
+        else if(number>user){
+            println("number geater than $user")
+            trial--
+            println("You have left only $trial chance")
+        }
+    }
+    println("The number was $number")
+}
