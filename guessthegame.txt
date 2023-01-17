@@ -4,7 +4,7 @@ fun main(){
     val user=0
     var trial=8
     println("Welcome to number guessing game here you have to choose a number between 1 to 100 in 8 trials let' go")
-    while(user <trial){
+    while(user <=trial){
         print("Enter number- ")
         var user=Integer.valueOf(readLine())
         if(user==number){
