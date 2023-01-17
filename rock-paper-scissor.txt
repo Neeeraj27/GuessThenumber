@@ -1,4 +1,4 @@
-//ROCK-PAPER-SCISSOR game by kotlin
+////ROCK-PAPER-SCISSOR game by kotlin
 import java.util.Scanner
 fun main(){
     var win=0
